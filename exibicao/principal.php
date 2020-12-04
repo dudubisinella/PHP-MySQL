@@ -35,7 +35,7 @@
                         <th scope="row"><?= $curso->getNome() ?></th>
                         <td><?= App\Uteis\Formatador::cargaHoraria($curso->getCargaHoraria()) ?></td>
                         <td><?= $curso->getVersaoFerramenta() ?></td>
-                        <td><button type="button" class="btn btn-dark"">Deletar</button></td>
+                        <td><button type="button" class="btn btn-dark">Deletar</button></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
