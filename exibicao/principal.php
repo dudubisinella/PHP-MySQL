@@ -22,6 +22,7 @@
                     <th scope="col">Nome do curso</th>
                     <th scope="col">Carga Horária</th>
                     <th scope="col">Versão da ferramenta</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -34,6 +35,7 @@
                         <th scope="row"><?= $curso->getNome() ?></th>
                         <td><?= App\Uteis\Formatador::cargaHoraria($curso->getCargaHoraria()) ?></td>
                         <td><?= $curso->getVersaoFerramenta() ?></td>
+                        <td><button type="button" class="btn btn-dark"">Deletar</button></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
