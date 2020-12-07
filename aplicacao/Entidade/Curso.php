@@ -12,14 +12,17 @@ class Curso
 
     private bool $status;
 
+    private bool $deletar;
+
     public static function fromArray(array $dados)
     {
-        $curso = new Curso();
+        $curso = new Curso(); // cria a instancia 
         
-        $curso->nome = $dados['nome'];
+        $curso->nome = $dados['nome']; // dentro do array é os nomes que vem do banco de dados
         $curso->versaoFerramenta = $dados['versao_ferramenta'];
         $curso->cargaHoraria = $dados['carga_horaria'];
         $curso->status = $dados['status'];
+        $curso->deletar = $dados['status'];
 
         return $curso;
     }
@@ -62,5 +65,12 @@ class Curso
     public function getStatus(): bool
     {
         return $this->status;
-    }    
+    }
+    
+    public function getDeletar(): bool
+    {
+        if ($status === 1) {
+            
+        }
+    }
 }

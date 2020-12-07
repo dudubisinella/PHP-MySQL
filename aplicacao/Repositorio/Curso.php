@@ -8,9 +8,10 @@ class Curso extends RepositorioBase
 {
     public function todos()
     {
-        $cursosArray = $this->select('cursos');
+        $cursosArray = $this->select('cursos'); // chama o nome da tabela
 
-        $cursosObjeto = [];
+        $cursosObjeto = []; 
+
         foreach ($cursosArray as $curso) {
             $cursosObjeto[] = CursoEntidade::fromArray($curso);
         }

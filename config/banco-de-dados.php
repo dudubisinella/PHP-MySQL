@@ -8,5 +8,4 @@ return [
     'senha' => '123123',
     'modo-de-erro' => \PDO::ERRMODE_EXCEPTION,
     'conexao-persistente' => true
-
-];
+]; 
